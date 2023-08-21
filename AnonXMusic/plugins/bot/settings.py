@@ -62,7 +62,7 @@ async def gib_repo(client, CallbackQuery, _):
             [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper"),
               InlineKeyboardButton(
                     text=_["CLOSE_BUTTON"],
-                    callback_data="close",)
+                    callback_data="close")]]
         ),
     )
 
