@@ -57,7 +57,7 @@ async def gib_repo(client, CallbackQuery, _):
         has_spoiler=True),
         
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton(text=_["BACK_BUTTON"], callback_data=f"settingsback_helper")]]
+            [[InlineKeyboardButton(text=_["ʙᴀᴄᴋ"], callback_data=f"settingsback_helper")]]
         ),
     )
 
