@@ -59,14 +59,12 @@ async def gib_repo(client, CallbackQuery, _):
         has_spoiler=True),
         
         reply_markup=InlineKeyboardMarkup(
-            [
-            InlineKeyboardButton(
-                text=_["BACK_BUTTON"],
-                callback_data="settings_helper",
-            ),
-            InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close"),
-        ],
-    ]
+            [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper"),
+              InlineKeyboardButton(
+                    text=_["CLOSE_BUTTON"],
+                    callback_data="close",)
+        ),
+    )
 
 
 @app.on_callback_query(filters.regex("settings_helper") & ~BANNED_USERS)
